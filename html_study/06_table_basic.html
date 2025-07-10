@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 표의 기본 구조</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        /* 선이 이중으로 있는것을 한 선으로 합침 */
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: center;
+      }
+      th {
+        /* 이름/나이/지역 영역 (th) */
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML 표의 기본 구조 배우기</h1>
+    <!-- table 표 태그 -->
+    <table>
+      <caption>
+        우리 반 학생들의 간단한 정보
+      </caption>
+      <thead>
+        <!-- tr = 하나의 행 -->
+        <tr>
+          <th>이름</th>
+          <th>나이</th>
+          <th>지역</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 본문 -->
+        <tr>
+          <td>홍길동1</td>
+          <td>18</td>
+          <td>강남구</td>
+        </tr>
+        <tr>
+          <td>홍길동2</td>
+          <td>12</td>
+          <td>용산구</td>
+        </tr>
+        <tr>
+          <td>홍길동3</td>
+          <td>43</td>
+          <td>관악구</td>
+        </tr>
+        <tr>
+          <td>홍길동4</td>
+          <td>23</td>
+          <td>성북구</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <!-- ex.합계 -->
+        <tr>
+          <td>총 학생 수</td>
+          <td>4명</td>
+          <td>-</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <table>
+      <caption>
+        월별 판매 실적
+      </caption>
+      <thead>
+        <tr>
+          <th>월</th>
+          <th>판매량</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1월</td>
+          <td>100개</td>
+        </tr>
+        <tr>
+          <td>2월</td>
+          <td>200개</td>
+        </tr>
+        <tr>
+          <td>3월</td>
+          <td>300개</td>
+        </tr>
+        <tr>
+          <td>4월</td>
+          <td>500개</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>총 판매량</td>
+          <td>1100개</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
