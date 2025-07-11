@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3.CSS Template</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
+      h2 {
+        margin: 0;
+      }
+
+      #wrapper {
+        width: 100vw;
+      }
+
+      #header-container {
+        width: 100vw;
+        height: 47px;
+        background-color: black;
+        position: fixed;
+        z-index: 10;
+        /* css 만들어주는 사이트 있음 */
+        /* box-shadow: 0 2px 5px 0 rgba(); */
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #menu-container {
+        display: flex;
+      }
+
+           .menu-item {
+        /* border: 1px solid red;
+        box-sizing: border-box; */
+        padding: 12px 24px;
+        color: white;
+
+      }
+
+      .menu-item:hover {
+        background-color: #ccc;
+        color:black;
+      }
+
+      #img-container {
+        width: 100vw;
+        position: relative;
+      }
+
+      #img-container > div {
+        width: 350px;
+        /* background-color: #333; */
+        text-align: center;
+        position: absolute;
+        /* 절댓값 */
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+
+      #slide-img {
+        width: 100vw;
+      }
+
+      #band-container {
+        width: 100vw;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #search-icon {
+        background-color: aquamarine;
+      }
+
+ 
+
+      #band-content-box {
+        width: 800px;
+        height: 600px;
+        margin-top: 20px;
+      }
+
+      #band-text-box {
+        width: 100%;
+        height: 50%;
+      }
+
+      #band-member-box {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      #text-header-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+      }
+
+      #band-text-box > p {
+        font-size: 15px;
+      }
+
+      #text-header-box > p {
+        color: #333;
+      }
+
+      .member-card {
+        width: 180px;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .member-card > p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header-container">
+        <!-- 메뉴창이랑 검색창이 양쪽으로 붙어있음 -->
+        <div id="menu-container">
+          <div class="menu-item">HOME</div>
+          <div class="menu-item">BAND</div>
+          <div class="menu-item">TOUR</div>
+          <div class="menu-item">CONTACT</div>
+          <div class="menu-item">MORE</div>
+        </div>
+        <div id="search-icon">아이콘</div>
+      </div>
+      <div id="img-container">
+        <img
+          id="slide-img"
+          src="https://www.w3schools.com/w3images/ny.jpg"
+          alt=""
+        />
+        <div>
+          <h2>New York</h2>
+          <p>The atmosphere in New York is lorem ipsum.</p>
+        </div>
+      </div>
+      <div id="band-container">
+        <div id="band-content-box">
+          <div id="band-text-box">
+            <div id="text-header-box">
+              <h2>THE BAND</h2>
+              <p><em>We love music</em></p>
+            </div>
+            <p>
+              We have created a fictional band website. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div id="band-member-box">
+            <div class="member-card">
+              <p>Name</p>
+              <img
+                src="https://www.w3schools.com/w3images/bandmember.jpg"
+                alt=""
+                width="153"
+                height="153"
+              />
+            </div>
+            <div class="member-card">
+              <p>Name</p>
+              <img
+                src="https://www.w3schools.com/w3images/bandmember.jpg"
+                alt=""
+                width="153"
+                height="153"
+              />
+            </div>
+            <div class="member-card">
+              <p>Name</p>
+              <img
+                src="https://www.w3schools.com/w3images/bandmember.jpg"
+                alt=""
+                width="153"
+                height="153"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

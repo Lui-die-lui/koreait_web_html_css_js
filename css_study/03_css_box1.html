@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #container {
+      /* 레이아웃 영역 */
+      width: 1000px;
+      height: 300px;
+      /* 선 굵기 때문에 1px*2 씩 포함됨 */
+      border: 1px solid black;
+      /* 그런 현상을 막아줌(내가 지정한 레이아웃 크기) */
+      box-sizing: border-box;
+      background-color: cornflowerblue;
+      /* 가로로 들어가게 됨 */
+
+      /* -----set------ */
+      display: flex;
+      /* 옆으로 중앙으로 밀어줌 */
+      /* justify-content: center; */
+
+      /* 일정한 간격으로 띄워줌 */
+      /* justify-content: space-around; */
+
+      /* 양 옆으올 붙여버림 */
+      justify-content: space-between;
+
+      /* 아래로 중앙으로 밀어줌 */
+      align-items: center;
+      /* -------------- */
+    }
+
+    /* class = . */
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: coral;
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <!-- 부모태그 -->
+    <div id="container">
+      <!-- ctrl + alt -->
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
