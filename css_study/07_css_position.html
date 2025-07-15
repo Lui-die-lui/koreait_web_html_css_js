@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        width: 300px;
+        height: 400px;
+        background-color: tomato;
+        /* position: relative; */
+        overflow: auto;
+      }
+
+      div {
+        width: 200px;
+        height: 100px;
+        border: 1px solid yellow;
+        box-sizing: border-box;
+        text-align: center;
+        /* 글자 여백 세로 조절
+            height와 맞춰주면 중간정렬한것처럼 보임 */
+        line-height: 100px;
+      }
+
+      /* div 3개중에 2번째 */
+      div:nth-of-type(2) {
+        background-color: aqua;
+        opacity: 0.8;
+
+        /* position 있어야 값줘서 이동 가능 */
+        /* position: relative;
+        원래 자기가 있던 위치 기준 
+        top, bottom, left,right로 위치를 조절
+         */
+
+        /* position: absolute; 
+         원래 위치 기준이 아닌 상위 요소 중 relative인 요소를 기준
+         없으면 가장 상위 태그를 기준으로 삼는다 
+         */
+
+        /* position: fixed;
+        뷰포트 기준(브라우저의 전체화면) 
+         */
+
+        /* 상단으로 보내는 키
+            구글 검색 창 옆 섹션 */
+        position: sticky;
+        top: 28px;
+        left: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>position: static;</div>
+      <div>position: absolute;</div>
+      <div>position: static;</div>
+      <div>position: static;</div>
+      <div>position: static;</div>
+      <div>position: static;</div>
+      <div>position: static;</div>
+      <!-- 기본값 = static -->
+      <div>position: static;</div>
+    </main>
+  </body>
+</html>
