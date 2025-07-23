@@ -1,4 +1,4 @@
-function studentRegisterInput({type, name, onkeyup}) {
+function studentRegisterInput({ type, name, onkeyup }) {
   return `
     <div>
     <input type='${type}'name='${name}' autocomplete='off' onkeyup='${onkeyup}(event)'>

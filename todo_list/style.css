@@ -1,0 +1,125 @@
+body {
+  background-color: rgb(236, 236, 236);
+  /* 중앙 정렬 */
+  display: flex;
+  justify-content: center;
+
+  /* 상단정렬 */
+  align-items: flex-start;
+
+  padding-top: 50px;
+}
+
+.container {
+  width: 580px;
+  /* height: 220px; */
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  border-radius: 12px;
+
+  /* display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center; */
+  /* 위와 동일함 */
+  text-align: center;
+
+  box-shadow: 0 6px 20px 0 rgba(49, 49, 49, 0.1),
+    0 2px 10px 0 rgba(53, 53, 53, 0.1);
+
+  padding: 30px 60px;
+}
+
+.container > h1 {
+  color: #373737;
+
+  font-size: 2.2em;
+  margin-bottom: 30px;
+}
+/* em = 해당 요소의 부모의 font-size에 상대적으로 크기가 변하는것
+  em단위를 사용하면 폰트 크기가 부모로부터 자식으로 계속해서 상속 누적 
+  컴포넌트 크기(단위)에서 - 폰트사이즈의 비율을 같은 비율로 유지
+  특정 구성요소(컴포넌트) 내에서만 크기를 비례적으로 조절하고 싶을 때 유용
+  
+  rem 단위는 루트 즉, html(제일 상위 기본 폰트단위 16px)태그의 font-size에 상대적
+  -전체적인 비율에 사용
+  rem은 항상 루트 요소의 폰트 크기를 기준으로 하므로, 중첩된 요소에서도
+  크기 계산이 훨씬 예측하기 쉽고 일관적
+  웹페이지 전체의 기본 폰트 크기를 html에서 한 번만 변경하면
+  rem으로 사용하는 모든 요소의 크기가 비례적으로 조정
+  
+  em
+  컴포넌트 내부의 요소 간 상대적인 크기, padding, margin
+  rem
+  전역적인 폰트 크기, 주요 레이아웃 요소의 크기(width, height), padding*/
+
+.input-area {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input::placeholder {
+  color: #aaaaaa;
+}
+
+#todoInput {
+  /* width: 100%;
+  height: 45px; */
+
+  /* 공간 다 차지함 */
+  flex-grow: 1;
+
+  padding: 10px 0 8px;
+  /* 겉에 지정해둔 만큼 잡아줌 */
+  box-sizing: border-box;
+  font-size: 1em;
+  font-weight: 700;
+  color: #6a6a6a;
+  outline: none;
+  /* border-radius: 5px;
+  border: 1px solid #ddd; */
+
+  /* 자기 아래 배경색을 쓰겠다 */
+  background-color: transparent;
+
+  border: none;
+  border-bottom: 2px solid lightgray;
+
+  padding: 10px 15px;
+}
+
+#todoInput:focus {
+  border-bottom: 2px solid rgb(128, 128, 128);
+  background-color: rgb(247, 247, 247);
+  transition: all 0.3s ease-in-out;
+  /* transition: border-color 0.2s ease-in-out; */
+}
+
+#addTodoBtn {
+  /* padding으로 크기를 잡아줘야함 */
+  /* padding: 10px 25px; - 이걸로 바꿔보기 */
+  width: 70px;
+  height: 45px;
+  color: rgb(248, 248, 248);
+  background-color: rgb(11, 11, 11);
+  border-radius: 5px;
+  border: none;
+  /* margin-left: 10px; */
+  cursor: pointer;
+  font-size: 1em;
+  /* 여기 다름 */
+}
+
+#addTodoBtn:hover {
+  background-color: #373737;
+  transition: background-color 0.3s ease;
+  transform: translateY(-1.2px);
+}
+
+/* 눌려진 상태 */
+#addTodoBtn:active {
+  transform: translateY(0);
+}

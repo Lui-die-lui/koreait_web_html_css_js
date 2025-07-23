@@ -4,7 +4,6 @@
 
 window.onload = () => {
   const root = document.querySelector("#root");
-
   // 여기서 렌더링을 시켜주는 함수를 호출
   // html에 존재<div>
   render(root);
