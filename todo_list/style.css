@@ -23,7 +23,7 @@ body {
   justify-content: center;
   align-items: center; */
   /* 위와 동일함 */
-  text-align: center;
+  /* text-align: center; */
 
   box-shadow: 0 6px 20px 0 rgba(49, 49, 49, 0.1),
     0 2px 10px 0 rgba(53, 53, 53, 0.1);
@@ -36,6 +36,8 @@ body {
 
   font-size: 2.2em;
   margin-bottom: 30px;
+
+  text-align: center;
 }
 /* em = 해당 요소의 부모의 font-size에 상대적으로 크기가 변하는것
   em단위를 사용하면 폰트 크기가 부모로부터 자식으로 계속해서 상속 누적 
@@ -123,3 +125,98 @@ input::placeholder {
 #addTodoBtn:active {
   transform: translateY(0);
 }
+
+#todoList {
+  /* .들 다 없어짐 */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+i {
+  margin-left: 12px;
+}
+
+#todoList > li {
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  /* 세로 중앙 정렬 */
+  align-items: center;
+  /* 양쪽으로 떨어트림 */
+  justify-content: space-between;
+  border: 1px #eee;
+  border-radius: 5px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  gap: 10px;
+  /* 영역 끝에서 줄바꿈 시켜줌 */
+  word-break: break-all;
+}
+
+.edit-input {
+  padding: 8px 20px;
+  outline: none;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  font-size: 1em;
+  flex-grow: 1;
+}
+
+.todo-actions {
+  /* 영역 침범 불가능하게 만들어줌 */
+  /* 공간이 부족해도 이 요소는 줄어들지 않게 설정 */
+  flex-shrink: 0;
+}
+
+.todo-actions > button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.85em;
+  cursor: pointer;
+  color: #eee;
+  transition: background-color 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #aaaaaa;
+}
+
+.edit-btn:hover {
+  background-color: #9f9f9f;
+}
+
+.delete-btn {
+  background-color: #6c6c6c;
+}
+
+.delete-btn:hover {
+  background-color: #5c5c5c;
+}
+
+.save-btn {
+  background-color: #379351;
+}
+
+.save-btn:hover {
+  background-color: #1d7b37;
+}
+
+.cancel-btn {
+  background-color: #929292;
+}
+
+.cancel-btn:hover {
+  background-color: #7a7a7a;
+}
+
+/*
+patch 더미 데이터 (json placeholder) ,
+로컬 스토리지
+
+라우터
+
+ 새로고침해도 남아있는-데이터 보존
+어플리케이션 로컬스토리지에 저장되어있음 accessToken 저장도 여기됨*/

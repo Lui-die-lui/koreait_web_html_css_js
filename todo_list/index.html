@@ -3,18 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>Document</title>
     <!-- css 연결 -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Todo List</h1>
-      <div class="input-area"><input type="text" id="todoInput" placeholder="새로운 할 일을 입력하세요." />
+      <h1>Todo List<i class="fa-solid fa-check-to-slot" style="color: #151515;"></i></h1>
+      <div class="input-area">
+        <input
+          type="text"
+          id="todoInput"
+          placeholder="새로운 할 일을 입력하세요."
+        />
         <button id="addTodoBtn">추가</button>
-    </div>
-    <!-- li는 동적으로 추가 -->
-        <ul id="todoList"></ul>
+      </div>
+      <!-- li는 동적으로 추가 -->
+      <ul id="todoList"></ul>
     </div>
     <script src="script.js"></script>
   </body>
