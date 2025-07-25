@@ -1,0 +1,95 @@
+body {
+  background-color: rgb(236, 236, 236);
+  /* 중앙정렬 */
+  display: flex;
+  justify-content: center;
+
+  /* 상단정렬 */
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.container {
+  min-width: 600px;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px 0 rgba(49, 49, 49, 0.1),
+    0 2px 10px 0 rgba(53, 53, 53, 0.1);
+
+  padding: 30px 60px;
+  text-align: center;
+}
+
+h1 {
+  color: #373737;
+
+  font-size: 1.8em;
+  margin-bottom: 7px;
+
+  text-align: center;
+}
+
+header > p {
+  font-size: 0.8em;
+  margin-bottom: 30px;
+}
+
+.fetch-container {
+  margin-top: 20px;
+  padding: 8px 20px;
+  background-color: rgb(251, 251, 251);
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #eaeaea;
+}
+
+#fetchBtn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  margin: 10px;
+  background-color: #717171;
+  color: white;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: all background-color 0.3s ease, transform 0.1s ease;
+}
+
+#fetchBtn:hover {
+  background-color: #555555;
+  transition: background-color 0.3s ease;
+  transform: translateY(-1.2px);
+}
+
+#fetchBtn:active {
+  transform: translateY(0);
+}
+
+#postContainer {
+  min-height: 120px;
+  padding: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: rgb(248, 248, 248);
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #eaeaea;
+  text-align: left;
+}
+
+#postContainer > p {
+    /* 줄바꿈 유지 */
+    white-space: pre-wrap;
+    /* 긴 단어 줄바꿈 */
+    word-wrap: break-word;
+
+}
+
+.post-text {
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: center;
+  color: #717171;
+  padding-top: 32px;
+}
