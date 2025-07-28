@@ -79,11 +79,10 @@ header > p {
 }
 
 #postContainer > p {
-    /* 줄바꿈 유지 */
-    white-space: pre-wrap;
-    /* 긴 단어 줄바꿈 */
-    word-wrap: break-word;
-
+  /* 줄바꿈 유지 */
+  white-space: pre-wrap;
+  /* 긴 단어 줄바꿈 */
+  word-wrap: break-word;
 }
 
 .post-text {

@@ -1,0 +1,118 @@
+body {
+  background-color: #f4f7f6;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  /* body의 높이를 브라우저 세로 높이만큼 맞춰줌*/
+  min-height: 100vh;
+
+  padding: 30px 0;
+  /* 패딩값 포함 */
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px 40px;
+  /* 패딩이 들어가서 */
+  box-sizing: border-box;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* 최대 크기 */
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+header > h1 {
+  color: #007bff;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header > p {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.page-container {
+  border-radius: 10px;
+  border: 1px solid #b3b3b3;
+  padding: 20px;
+  display: none;
+  margin-top: 20px;
+}
+
+.active {
+  display: block;
+}
+
+h2 {
+  color: #0056b3;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+.loading-message {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+.list-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  /* 게시물이 800px 이상 넘어가면 스크롤 생성 */
+  max-height: 800px;
+  overflow: auto;
+}
+
+.list-container > li {
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+}
+
+.post-title {
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.post-title:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.detail-btn {
+  background-color: #17a2b8;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.detail-btn:hover {
+    background-color: #138496;
+
+}
