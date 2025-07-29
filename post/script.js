@@ -21,9 +21,11 @@ const backBtn = document.querySelector("#backBtn");
 // 목록 - 상세 전환 함수
 function changeContainer(containerId) {
   const containers = document.querySelectorAll(".page-container");
+  // active를 먼저 다 제거해줌
   containers.forEach((container) => {
     container.classList.remove("active");
   });
+  // 보여줄 것만 반환
   document.querySelector(`#${containerId}`).classList.add("active");
 }
 
@@ -81,6 +83,10 @@ async function fetchPostDetail(postId) {
     changeContainer("postListContainer"); // 실패시 목록으로
   }
 }
+
+// 목록으로 돌아가는 버튼 // click 일때 함수 실행
+backBtn.addEventListener("click", () => changeContainer("postListContainer"));
+// 클릭 시, id가 postListContainer인 게시물 목록 컨테이너에 active 클래스를 추가해서 목록 화면을 보여줌
 
 postList.addEventListener("click", (event) => {
   const target = event.target;
