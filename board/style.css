@@ -71,11 +71,19 @@ form {
   width: 400px;
 }
 
-input {
+/* 공통 스타일을 잡아줌 */
+input,
+textarea {
   padding: 10px;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
   margin-bottom: 10px;
+}
+
+textarea {
+  height: 150px;
+  /* 사이즈 못바꾸게 만듦 */
+  resize: none;
 }
 
 .btn-submit {
@@ -90,4 +98,26 @@ input {
 
 .btn-submit:hover {
   background-color: #0056b3;
+}
+
+/* 게시물 목록 스타일 */
+#board-list {
+  /* 부모요소의 100% */
+  width: 100%;
+  max-width: 700;
+  list-style: none;
+  padding: 0;
+}
+
+#board-list > li {
+  padding: 15px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#board-list > li:hover {
+  background-color: #f6f6f6;
 }
