@@ -18,6 +18,9 @@ const detailBody = document.querySelector("#detailBody");
 // 목록으로 돌아가기 버튼
 const backBtn = document.querySelector("#backBtn");
 
+// 게시물 상세
+const 
+
 // 목록 - 상세 전환 함수
 function changeContainer(containerId) {
   const containers = document.querySelectorAll(".page-container");
@@ -81,6 +84,7 @@ async function fetchPostDetail(postId) {
   } catch (error) {
     alert("게시물 상세를 불러오는데 실패했습니다.");
     changeContainer("postListContainer"); // 실패시 목록으로
+  
   }
 }
 
