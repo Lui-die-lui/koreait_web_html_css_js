@@ -121,3 +121,49 @@ textarea {
 #board-list > li:hover {
   background-color: #f6f6f6;
 }
+
+#page-detail {
+  /* background-color: #dbdbdb; */
+  text-align: left;
+  max-width: 600px;
+
+}
+
+#page-dtail >  h2, p {
+  /* 아예 부모크기까지 늘림 ? h2 왜 안됨*/
+  width: 100%;
+}
+
+#detail-title {
+    width: 100%;
+
+}
+
+#detail-userId {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dbdbdb;
+  box-sizing: border-box;
+}
+
+
+#detail-content {
+  min-height: 500px;
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 10px;
+}
+
+#back-btn {
+  border: none;
+  padding: 7px 12px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+  /* 자기자신 기준 부모 안에서 */
+  transition: all 0.3s ease;
+}
+
+#back-btn:hover {
+  background-color: #e2e6ea;
+}
