@@ -126,17 +126,16 @@ textarea {
   /* background-color: #dbdbdb; */
   text-align: left;
   max-width: 600px;
-
 }
 
-#page-dtail >  h2, p {
+#page-dtail > h2,
+p {
   /* 아예 부모크기까지 늘림 ? h2 왜 안됨*/
   width: 100%;
 }
 
 #detail-title {
-    width: 100%;
-
+  width: 100%;
 }
 
 #detail-userId {
@@ -145,7 +144,6 @@ textarea {
   border-bottom: 1px solid #dbdbdb;
   box-sizing: border-box;
 }
-
 
 #detail-content {
   min-height: 500px;
@@ -166,4 +164,45 @@ textarea {
 
 #back-btn:hover {
   background-color: #e2e6ea;
+}
+
+#btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#btn-box {
+  display: none;
+}
+
+.commonBtn {
+  border: none;
+  padding: 7px 12px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.commonBtn:nth-of-type(1) {
+  background-color: #cc3300;
+  margin-right: 6px;
+}
+
+.commonBtn:nth-of-type(1):hover {
+  background-color: #b82e00;
+}
+
+.commonBtn:nth-of-type(2) {
+  background-color: #0057e7;
+}
+
+.commonBtn:nth-of-type(2):hover {
+  background-color: #004cc7;
+}
+
+.active {
+  display: flex !important;
 }
